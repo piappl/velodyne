@@ -117,7 +117,7 @@ VelodyneDriver::VelodyneDriver(ros::NodeHandle node,
     CallbackType f;
   f = boost::bind (&VelodyneDriver::callback, this, _1, _2);
   srv_->setCallback (f); // Set callback function und call initially
-  srv2_ = boost_make_shared <dynamic_reconfigure::Server<velodyne_driver::
+  srv2_ = boost::make_shared <dynamic_reconfigure::Server<velodyne_driver::
     VelodyneNodeConfig> > (private_nh);
   // initialize diagnostics
   diagnostics_.setHardwareID(deviceName);
