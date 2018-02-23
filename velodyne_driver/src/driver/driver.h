@@ -26,13 +26,7 @@
 
 namespace velodyne_driver
 {
-  /*namespace {
-    double g_rpm; // global (header file scope)
-    
-    void set_rpm(const double rpm) { // Call this function before executing callback.
-      g_rpm = rpm;
-    }*/
-  }
+ 
 
 class VelodyneDriver
 {
